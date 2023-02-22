@@ -1,14 +1,16 @@
 * {box-sizing: border-box}
 
 /* style the container */
-.container {
+.container 
+{
  
   border-radius: 5px;
   background-color: none;
   text-align: center;
  }
 input,
-.btn {
+.btn 
+{
   width: 25%;
   padding: 12px;
   border: none;
@@ -20,7 +22,8 @@ input,
   line-height: 20px;
   text-decoration: none; /* remove underline from anchors */
 }
-h3{
+h3
+{
     padding: 15px;
     text-decoration: underline;
     color: burlywood;

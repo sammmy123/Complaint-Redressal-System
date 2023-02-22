@@ -9,7 +9,7 @@ export class ManagerDashboardComponent {
 
   viewUsers()
   {
-    window.location.href="http://localhost:4200/users";
+    window.location.href="http://localhost:4200/customers";
   }
 
   viewComplaints()

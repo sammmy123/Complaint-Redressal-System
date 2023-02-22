@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AmitRakteComponent } from './amit-rakte/amit-rakte.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CustomersComponent } from './customers/customers.component';
 import { EngineersComponent } from './engineers/engineers.component';
 import { HomeComponent } from './home/home.component';
 import { ComplaintComponent } from './login/customer-login/complaint/complaint.component';
@@ -112,7 +113,10 @@ const routes: Routes = [
   path:'amit',
   component:AmitRakteComponent
 },
-
+{
+  path:'customers',
+  component:CustomersComponent
+},
 {
   path:'**', //For any website it will redirect to Homepage.
   component:HomeComponent

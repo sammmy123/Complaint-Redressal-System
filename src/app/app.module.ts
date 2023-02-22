@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'; //for backend connectivity
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { EngineersComponent } from './engineers/engineers.component';
 import { ManagersComponent } from './managers/managers.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { AmitRakteComponent } from './amit-rakte/amit-rakte.component';
+import { CustomersComponent } from './customers/customers.component';
 
 @NgModule({
   declarations: [
@@ -51,11 +53,14 @@ import { AmitRakteComponent } from './amit-rakte/amit-rakte.component';
     ManagersComponent,
     ComplaintsComponent,
     AmitRakteComponent,
+    CustomersComponent
+    
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule //for backend connectivity
   ],
   providers: [],
   bootstrap: [AppComponent]
